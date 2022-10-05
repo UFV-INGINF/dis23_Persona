@@ -25,16 +25,16 @@ public class Main {
         System.out.print("Introduzca apellido: ");
         person2.setApellido(lectura.next());
 
-        System.out.print("Introduzca Dni: ");
+        System.out.print("Enter Dni: ");
         person2.setDni(lectura.next());
 
-        person2.setSexo(Sexo.sexo.v);
+//        person2.setSexo(Sexo.sexo.v);
 
-        System.out.print("Introduzca Direccion: ");
+        System.out.print("Enter Address: ");
         person2.setDireccion(lectura.next());
 
-        System.out.print("Introduzca Teléfono: ");
-        person2.setTelefono(lectura.next());
+        System.out.print("Introduzca email: ");
+        person2.setSexo(Sexo.sexo.valueOf(lectura.next()));
 
         System.out.println(person.toString());
         System.out.println(person2.toString());

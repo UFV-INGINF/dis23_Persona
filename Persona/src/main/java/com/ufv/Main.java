@@ -78,6 +78,5 @@ public class Main {
         System.out.println(personas.personaList.toString());
         System.out.println(personas.personaList.size());
 
-        System.out.println("Trying to create new conflicts");
     }
 }

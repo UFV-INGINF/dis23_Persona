@@ -72,6 +72,20 @@ public class Main {
 
 
 
+//        personas.personaList.add(person);
+//        personas.personaList.add(person2);
+//        System.out.println(personas.personaList.toString());
+//        System.out.println(personas.personaList.size());
+
+
+        System.out.println("Trying to create new conflicts");
+
+        personas.personaList.add(person);
+        personas.personaList.add(person2);
+        System.out.println(personas.personaList.toString());
+        System.out.println(personas.personaList.size());
+
+        System.out.println("Trying to create new conflicts");
 
         personas.personaList.add(person);
         personas.personaList.add(person2);

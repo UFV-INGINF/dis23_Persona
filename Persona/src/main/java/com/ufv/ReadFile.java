@@ -1,7 +1,6 @@
 package com.ufv;
 
 import java.io.BufferedReader;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -16,7 +15,7 @@ public class ReadFile {
 
         public static ArrayList<Persona> readFile() {
 
-            ArrayList<Persona> lista = new ArrayList<Persona>();
+            ArrayList<Persona> lista = new ArrayList<>();
             try {
                 br = new BufferedReader(new FileReader("agenda.csv"));
                 br.readLine();
@@ -28,13 +27,11 @@ public class ReadFile {
                     person.setNombre(persona[0]);
                     person.setApellido(persona[1]);
                     person.setDni(persona[2]);
-//                    person.setSexo(Sexo.sexo.valueOf(persona[3]));
+                    person.setSexo(Sexo.sexo.valueOf(persona[3].replaceAll("\\s+","").toLowerCase()));
 
                     lista.add(person);
                     //use comma as separator
                 }
-            } catch (FileNotFoundException e) {
-                throw new RuntimeException(e);
             } catch (IOException e) {
                 throw new RuntimeException(e);
             }

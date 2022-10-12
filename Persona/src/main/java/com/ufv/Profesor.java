@@ -3,8 +3,8 @@ package com.ufv;
 public class Profesor extends Persona{
     private String ID_Profesor;
 
-    public Profesor(String nombre, String apellidos, String dni,String direccion, String telefono, String ID_Profesor) {
-        super(nombre, apellidos, dni, direccion, telefono);
+    public Profesor(String nombre, String apellidos, String dni,String ID_Profesor) {
+        super(nombre, apellidos, dni);
         this.ID_Profesor = ID_Profesor;
     }
 
@@ -22,7 +22,7 @@ public class Profesor extends Persona{
 
     public String toString() {
          String res = super.toString();
-         return res + ", ID Profesor= " + ID_Profesor + '\n' +
+         return res + ", ID Profesor= " + ID_Profesor +
                 '}';
     }
 }
